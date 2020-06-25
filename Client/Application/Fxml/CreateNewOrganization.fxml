@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="650.0" minWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Application.Controllers.CreateNewOrganizationController">
+   <children>
+      <Label fx:id="labelName" layoutX="58.0" layoutY="38.0" prefHeight="26.0" prefWidth="112.0" text="Name:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="38.0" />
+      <TextField fx:id="textFieldName" layoutX="216.0" layoutY="38.0" prefHeight="26.0" prefWidth="260.0" promptText="Edit Name" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="38.0" />
+      <Label fx:id="labelX" layoutX="58.0" layoutY="90.0" prefHeight="26.0" prefWidth="112.0" text="Coordinet X:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="90.0" />
+      <Slider fx:id="sliderX" layoutX="216.0" layoutY="125.0" minorTickCount="4" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="125.0" />
+      <Slider fx:id="sliderY" layoutX="216.0" layoutY="223.0" minorTickCount="4" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="223.0" />
+      <Label fx:id="labelY" layoutX="58.0" layoutY="194.0" prefHeight="18.0" prefWidth="112.0" text="Coordinet Y:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="194.0" />
+      <Label fx:id="labelAnnualTurnover" layoutX="58.0" layoutY="286.0" prefHeight="18.0" prefWidth="112.0" text="Annual turnover:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="286.0" />
+      <Slider fx:id="sliderAnnualTurnover" blockIncrement="1.0" layoutX="217.0" layoutY="308.0" minorTickCount="4" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="308.0" />
+      <Label fx:id="labelEmployeesCount" layoutX="58.0" layoutY="376.0" prefHeight="18.0" prefWidth="112.0" text="Employees count:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="376.0" />
+      <Slider fx:id="sliderEmployeesCount" layoutX="217.0" layoutY="398.0" minorTickCount="4" prefHeight="38.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="398.0" />
+      <Label fx:id="labelType" layoutX="58.0" layoutY="466.0" prefHeight="18.0" prefWidth="112.0" text="Type:" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="466.0" />
+      <Label fx:id="labelAddress" layoutX="58.0" layoutY="521.0" prefHeight="18.0" prefWidth="112.0" text="Address" AnchorPane.leftAnchor="58.0" AnchorPane.topAnchor="521.0" />
+      <TextField fx:id="textFieldAddress" layoutX="217.0" layoutY="517.0" prefHeight="26.0" prefWidth="260.0" promptText="edit address" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="517.0" />
+      <Label fx:id="labelErrorName" layoutX="216.0" layoutY="64.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="64.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorX" layoutX="216.0" layoutY="162.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorY" layoutX="216.0" layoutY="256.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="256.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorAnnualTurnover" layoutX="217.0" layoutY="346.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="346.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorEmployeesCount" layoutX="216.0" layoutY="436.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="436.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorType" layoutX="216.0" layoutY="491.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="491.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Label fx:id="labelErrorAddress" layoutX="216.0" layoutY="549.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="549.0">
+         <font>
+            <Font size="10.0" />
+         </font></Label>
+      <Button fx:id="buttonCreate" layoutX="508.0" layoutY="591.0" mnemonicParsing="false" onAction="#clickCreate" text="Create" textFill="LIME" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="591.0" />
+      <Button fx:id="buttonCancel" layoutX="600.0" layoutY="591.0" mnemonicParsing="false" onAction="#clickCancel" text="Cancel" textFill="RED" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="591.0" />
+      <TextField fx:id="textFieldAnnualTurnover" layoutX="217.0" layoutY="282.0" prefHeight="26.0" prefWidth="260.0" promptText="edit Annual turnover" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="282.0" />
+      <TextField fx:id="textFieldEmployeesCount" layoutX="217.0" layoutY="372.0" prefHeight="26.0" prefWidth="260.0" promptText="edit Employees count" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="372.0" />
+      <TextField fx:id="textFieldY" layoutX="216.0" layoutY="190.0" prefHeight="26.0" prefWidth="260.0" promptText="edit Y" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="190.0" />
+      <TextField fx:id="textFieldX" layoutX="216.0" layoutY="90.0" prefHeight="26.0" prefWidth="260.0" promptText="edit X" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="90.0" />
+      <ComboBox fx:id="comboBoxType" layoutX="217.0" layoutY="462.0" prefHeight="26.0" prefWidth="260.0" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="462.0" />
+   </children>
+</AnchorPane>

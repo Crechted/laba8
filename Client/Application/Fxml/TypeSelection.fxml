@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane minHeight="200.0" minWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Application.Controllers.TypeSelectionController">
+   <children>
+      <Label layoutX="111.0" layoutY="34.0" prefHeight="18.0" prefWidth="77.0" text="Selected type" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="34.0" />
+      <ComboBox fx:id="comboBoxType" layoutX="75.0" layoutY="87.0" prefWidth="150.0" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="87.0" />
+      <Button layoutX="172.0" layoutY="154.0" mnemonicParsing="false" onAction="#clickOk" text="Ok" textFill="LIME" AnchorPane.leftAnchor="172.0" AnchorPane.topAnchor="154.0" />
+      <Button layoutX="223.0" layoutY="154.0" mnemonicParsing="false" onAction="#clickCancel" text="Cancel" textFill="RED" AnchorPane.leftAnchor="223.0" AnchorPane.topAnchor="154.0" />
+   </children>
+</AnchorPane>

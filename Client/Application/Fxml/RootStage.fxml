@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="1000.0" snapToPixel="false" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Application.Controllers.RootController">
+      <children>
+         <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="400.0" />
+             <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="400.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="300.0" vgrow="ALWAYS" />
+             <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="300.0" vgrow="ALWAYS" />
+           </rowConstraints>
+            <children>
+           
+            <ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="400.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <content>
+
+
+                     <Label fx:id="labelTextSpace">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Label>
+               </content>
+            </ScrollPane>
+            <TilePane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="240.0" minWidth="400.0" prefColumns="3" prefHeight="240.0" prefRows="0" prefTileHeight="60.0" prefTileWidth="160.0" prefWidth="374.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="buttonShow" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickShow" text="Show">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                     <tooltip>
+                        <Tooltip text="Command 'Show'" />
+                     </tooltip></Button>
+                  <Button fx:id="buttonHelp" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickHelp" text="Help">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'Help'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonInfo" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickInfo" text="Info">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                      <Tooltip text="Command 'Info'" />
+                  </tooltip></Button>
+                  <Button fx:id="buttonAdd" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickAdd" text="add">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'add'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonUpdate" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickUpdate" text="update">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'update'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonAddIfMin" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickAddIfMin" text="add If Min">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'add if min'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonRemove" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickRemove" text="remove">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'remove'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonClear" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickClear" text="clear">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'clear'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonRemoveGreater" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickRemoveGreater" text="remove greater">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'remove greater" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonRemoveLower" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickRemoveLower" text="remove lower">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'remove lower'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonCountGreaterThanType" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickCountGreaterThanType" text="CGTT">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'count greater than type'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonPrintDescending" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickPrintDescending" text="PD">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin><tooltip>
+                      <Tooltip text="Command 'print_descending'" />
+                  </tooltip></Button>
+                  <Button minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#F" text="F">
+                      <TilePane.margin>
+                          <Insets />
+                      </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Press 'F' to pay respect this Lab" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonPrintFieldAscendingOfficialAddress" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickPrintFieldAscendingOfficialAddress" text="PFAOA">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'print field ascending official address'" />
+                      </tooltip></Button>
+                  <Button fx:id="buttonExecuteScript" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickExecuteScript" text="Execute Script">
+                     <TilePane.margin>
+                        <Insets />
+                     </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'execute script'" />
+                      </tooltip></Button>
+                   <Button fx:id="buttonChangeUser" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" onAction="#clickChangeUser" text="Change user">
+                       <TilePane.margin>
+                           <Insets />
+                       </TilePane.margin>
+                       <tooltip>
+                           <Tooltip text="Command 'execute script'" />
+                       </tooltip></Button>
+                   <ComboBox fx:id="comboBox" minHeight="15.0" minWidth="120.0">
+                       <TilePane.margin>
+                           <Insets />
+                       </TilePane.margin>
+                       <tooltip>
+                           <Tooltip text="Choice language" />
+                       </tooltip></ComboBox>
+                  <CheckBox fx:id="checkBoxAllTable" minHeight="15.0" minWidth="120.0" mnemonicParsing="false" prefWidth="100.0" text="Show all Organization in table" wrapText="true">
+                      <TilePane.margin>
+                          <Insets />
+                      </TilePane.margin>
+                      <tooltip>
+                          <Tooltip text="Command 'execute script'" />
+                      </tooltip></CheckBox>
+               </children>
+            </TilePane>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <content>
+                  <Pane fx:id="paneCanvas" prefHeight="1000" prefWidth="1000">
+                     <children>
+                        <Canvas fx:id="canvas" height="1000.0" width="1000.0" />
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="400.0" GridPane.columnIndex="1">
+               <children>
+                      <TableView fx:id="tableOrganization" editable="true" layoutX="-4.0" layoutY="26.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="300.0" minWidth="400.0" prefHeight="324.0" prefWidth="500.0" snapToPixel="false" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                             <columns>
+                                 <TableColumn fx:id="organizationNameColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Organization name" />
+                                 <TableColumn fx:id="employeesCountColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Employees count" />
+                                 <TableColumn fx:id="annualTurnoverColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Annual turnover" />
+                                 <TableColumn fx:id="coordinatesColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Coordinates" />
+                                 <TableColumn fx:id="typeColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Type" />
+                                 <TableColumn fx:id="dateColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Date" />
+                                 <TableColumn fx:id="addressColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="Address" />
+                                 <TableColumn fx:id="idColumn" maxWidth="1.7976931348623157E308" minWidth="150.0" prefWidth="150.0" text="ID" />
+                             </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                           </TableView>
+                  <TextField fx:id="textFieldFilter" layoutX="125.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="26.0" minWidth="377.0" prefHeight="26.0" prefWidth="400.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextField>
+                  <Label fx:id="labelFilter" alignment="CENTER" layoutY="4.0" prefHeight="26.0" prefWidth="100.0" text="Filter:" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            </children>
+         </GridPane>
+      </children></AnchorPane>

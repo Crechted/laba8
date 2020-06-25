@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="200.0" minWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Application.Controllers.ExecuteFilePathController">
+   <children>
+      <TextField fx:id="textFieldPath" layoutX="42.0" layoutY="87.0" prefHeight="26.0" prefWidth="216.0" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="87.0" />
+      <Label layoutX="127.0" layoutY="36.0" text="File path" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="36.0" />
+      <Button layoutX="173.0" layoutY="153.0" mnemonicParsing="false" onAction="#clickOk" text="Ok" textFill="LIME" AnchorPane.leftAnchor="173.0" AnchorPane.topAnchor="153.0" />
+      <Button layoutX="225.0" layoutY="153.0" mnemonicParsing="false" onAction="#clickCancel" text="Cancel" textFill="RED" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="153.0" />
+   </children>
+</AnchorPane>
